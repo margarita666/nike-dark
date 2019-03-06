@@ -1,0 +1,211 @@
+@font-face {
+	font-family: MuseoLight ;
+	src: url('fonts/MuseoSans/MuseoSansCyrl-100.eot');
+	src: local('MuseoSansCyrl-100'),
+		url('fonts/MuseoSans/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MuseoSans/MuseoSansCyrl-100.woff') format('woff'),
+		url('fonts/MuseoSans/MuseoSansCyrl-100.ttf') format('truetype');
+	font-weight: 100;
+	font-style: thin;
+}
+
+@font-face {
+	font-family: Museo ;
+	src: url('fonts/MuseoSans/MuseoSansCyrl-300.eot');
+	src: local('MuseoSansCyrl-300'),
+		url('fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MuseoSans/MuseoSansCyrl-300.woff') format('woff'),
+		url('fonts/MuseoSans/MuseoSansCyrl-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+:root {
+	--font-desc: Museo, sans-serif;
+	--font-title:MuseoLight, sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+body{
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+	font-family: var(--font-title);
+}
+
+.container{
+	width: 100%;
+	max-width: 730px;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+	background: #111a28;
+	margin-top:110px;
+	border-radius: 10px;
+
+}
+
+.header{
+
+	height: 76px;
+	padding: 25px 0 20px 20px;
+}
+
+.header__logo-img{
+	
+	display: inline-block;
+	justify-content: left;
+}
+
+.content{
+	display: flex;
+}
+
+.product{
+
+}
+
+.product__img{
+	padding: 65px 80px 65px 30px;
+}
+
+.product__variants { 
+	display: flex;
+	justify-content: space-between;
+	width: 75px;
+	margin: 0 auto 20px;
+}
+
+.product__dott--is--active { 
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+}
+
+.product__dott-grey { 
+	background: #1f273f; }
+
+.product__dott-white {  
+	background: #ffffff;
+}
+
+.product__dott-red { 
+	background: #ed3333;
+}
+
+.product__dott-blue { 
+	background: #29e3ea;
+}
+
+.product__dott--is--active:hover { 
+	border: 1.5px solid #7e838b;
+	transform: scale(1.5);
+}
+
+
+
+.desc{
+
+}
+
+.desc__title{
+	font-size:24px;
+	font-family: var(--font-title);
+	font-weight: 100;
+	color: #e1e1e1;
+	letter-spacing: .9;
+}
+
+.desc__description{
+	font-size: 14px;
+	font-family: var(--font-desc);
+	color: #e1e1e1;
+	opacity: .54;
+	padding-top:12px;
+	padding-bottom: 20px;
+}
+
+.desc__stars{
+	display: flex;
+	margin-bottom:  27px;
+
+}
+
+.desc__stars--val{
+color: #f7bf16;
+
+}
+
+.desc__stars--val1{
+color: #e1e1e1;
+}
+
+.decs__select{
+	color:#9da1a6;
+	margin-bottom: 30px;
+
+}
+
+.desc__select-size,
+.desc__select-qty{
+color:#9da1a6;
+padding: 10px;
+border:1px solid #4f5560;
+    background: #111a28;
+}
+
+.desc__button{
+	height: 40px;
+    width: 185px;
+    border: 1px solid;
+    border-color: #4f5560;
+    background: #202835;
+    color:#9da1a6;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
